@@ -1,0 +1,51 @@
+apiVersion: v1
+entries:
+  orc8r:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-08-27T06:14:33.455424-04:00"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.4
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.14
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.7
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    description: A Helm chart for magma orchestrator
+    digest: a341e63ab33e794ebe5919376c3cf8c78874d33d16f0ad16c14647d936b12649
+    keywords:
+    - magma
+    - or8cr
+    name: orc8r
+    sources:
+    - https://github.com/facebookincubator/magma
+    urls:
+    - orc8r-1.4.34.tgz
+    version: 1.4.34
+  orc8rlib:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-08-27T06:14:33.455723-04:00"
+    description: A Helm library chart for orchestrator modules
+    digest: d235d9c90c38ff7292f61ae5e464e7a04cb90c9542528fd9ccfb97815a7a4565
+    keywords:
+    - magma
+    - orc8rlib
+    name: orc8rlib
+    sources:
+    - https://github.com/magma/magma
+    type: library
+    urls:
+    - orc8rlib-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-08-27T06:14:33.44955-04:00"
